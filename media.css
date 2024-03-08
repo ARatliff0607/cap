@@ -1,0 +1,61 @@
+/* MEDIA */
+@media only screen and (max-width: 750px) {
+    header {
+        position: relative;
+    }
+     
+    header ul {
+        width: 100%;
+        max-height: 0px;
+        overflow: hidden;
+    }
+    
+    .showing {
+    max-height: 100em;
+    }
+    
+    header ul li {
+        width: 100%;
+    }
+    
+    header ul li ul {
+        position: static;
+        display: block;
+        width: 100%;
+    }
+   
+    header ul li ul li a {
+        padding: 10px;
+        background: purple;
+        color: beige;
+        padding-left: 50px;
+    }
+    
+    header .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 1.9em;
+    }
+    
+    header .logo {
+        margin-left: .9em;
+    }
+    
+    .post-slider .post-wrapper .post .slider-image {
+        max-width: 100%;
+        max-height: 55%; 
+    }
+
+    .content .main-content .post {
+        width: 100%;
+        height: 150px;
+        margin: 25px auto;
+        border-radius: 5px;
+        background: rgb(243, 145, 233);
+    }
+
+}
+
+   

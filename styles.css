@@ -1,0 +1,226 @@
+header {
+    background-color: blueviolet;
+    height: 70px;
+}
+
+header * {
+    color: beige;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: plum;
+    background: linear-gradient(to right, #f029ed, #c98ed9, #f597c9, #460145);
+    background-size: 200% auto;
+    animation: glitter 3s linear infinite;
+}
+
+@keyframes glitter {
+    0% {
+    background-position: 0% center;
+    }
+    100% {        
+    background-position: 100% center;
+    }
+}
+
+header .logo {
+    float: left;
+    font-family: cursive;
+}
+
+header ul {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+header ul li {
+    float:left;
+    position: relative;
+}
+
+header ul li ul {
+    position: absolute;
+    top: 66px;
+    right: 0px;
+    width: 150px;
+    display: none;
+    z-index: 90000;
+}
+
+header ul li:hover ul {
+display: block;
+}
+
+header ul li ul li {
+    width: 100%;
+}
+
+header ul li ul li a {
+    padding: 10px;
+    background: rgb(243, 161, 233);
+    width: 75%;
+    
+}
+
+header ul li ul li a:hover {
+    background: rgb(230, 149, 230);
+}
+
+header ul li ul li a.logout {
+    color: red;
+}
+
+header ul li ul li {
+    width: 100;
+}
+
+header ul li a {
+    display: block;
+    padding: 20px;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    background-color: rgb(237, 63, 147);
+    
+}
+
+header .logo {
+    float: left;
+    height: inherit;
+    margin-left: 3em;
+}
+
+header .logo-text {
+    margin: 10px;
+}
+
+header .logo-text span {
+    color: rgb(245, 85, 213) ;                  
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(70, 1, 69);
+    margin: 5px;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    color: #460145;
+}
+.page-wrapper a:hover {
+    color: rgb(239, 10, 10);
+}
+.post-slider .post-wrapper .post .slider-image {
+    max-width: 100%;
+    max-height: 100%; 
+}
+
+/* book content */
+.content {
+    width: 85%;
+    margin: 30px auto 30px;
+}
+
+.content .main-content {
+    width: 75%;
+    float: left;
+}
+
+.content .main-content .recent-post-title {
+    margin: 20px;
+}
+
+.content .main-content .post {
+    width: 95%;
+    height: 265px;
+    margin: 25px auto;
+    border-radius: 5px;
+    background: rgb(243, 145, 233);
+    position: relative;
+}
+
+.content .main-content .post .readmore {
+    position: absolute;
+    bottom: 10px;
+    right: 200px;     
+}
+    
+
+.content .main-content .post .post-image {
+    width: 40%;
+    height: 100%;
+    float: left;
+}
+
+.content .main-content .post .post-preview {
+    width: 50%;
+    padding: 10px;
+    float: left;
+}
+
+.btn {
+    padding: .5rem 1rem;
+    background: #460145;
+    color: blanchedalmond;
+    border-radius: .20rems;
+}
+
+/* footer */
+.footer {
+    background: blueviolet;
+    color: beige;
+    height: 400px;
+}
+
+.footer .footer-content {
+    height: 350px;
+    display: flex;
+}
+
+.footer .footer-content .footer-section {
+    flex: 1;
+    padding: 25px;
+}
+
+
+
+.footer .footer-content h1, .footer .footer-content h2 {
+    color: beige;
+}
+
+.footer .footer-content .about .contact span {
+    display: block;
+    font-size: 1.5em;
+    margin-bottom: 8px;
+}
+
+.footer .footer-content .contact-form .contact-input {
+    background: #460145;
+    color: beige;
+    margin-bottom: 10px;
+}
+
+/* book1 */
+
+.book1 {
+    text-align: center;
+    font-size: 25px;
+    font-family: cursive;
+}
+
+.acotar {
+    width: 250px;
+}
