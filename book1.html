@@ -54,13 +54,12 @@
         <h7>A Court of Thorns and Roses</h7>
     <p>"To the stars who listen and the dreams that are answered"</p>
     </div>
-    <div class="book1images">
-        <img src="book1images/all books.jpg" alt="" class="acotar" style="position: absolute; top: 1; left: 0; ">
+    
     </div>
     
 
     <!--youtube-->
-    <div style="position: fixed; top: 1; right: 0;">
+    <div class="youtube" style="position: fixed; top: 1; right: 0;">
         <iframe width="400" height="200" src="https://www.youtube.com/embed/6Swd7d6aufQ" frameborder="0" allow="autoplay;encrypted-media"allowfullscreen></iframe>
     </div>
     
@@ -87,6 +86,79 @@
 
     <!--Slick Carousel-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+     <!--Bar Chart-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+     <body>
+     
+     <canvas id="myChart" style="width:100%;max-width:600px;position:absolute;bottom:0;right:0"></canvas>
+     
+     <script>
+     const xValues = ["Walmart", "Target", "Amazon", "Barnes and Noble"];
+     const yValues = [11.00, 11.00, 10.00, 16.00];
+     const barColors = ["red", "green", "pink" ,"orange"];
+     
+     new Chart("myChart", {
+       type: "bar",
+       data: {
+         labels: xValues,
+         datasets: [{
+           backgroundColor: barColors,
+           data: yValues
+         }]
+       },
+       options: {
+         legend: {display: false},
+         title: {
+           display: true,
+           text: "Best Prices"
+         }
+       }
+     });
+     </script>
+     
+     </body>
+         <!--//Bar chart-->
+
+    <div class="container">
+        <div class="information-box">
+            <h2>Summary</h2>
+            <p>A Court of throns and roses, follows the journey of Feyre Archeron after she is brought into the faerie lands of Prythian, and an Epic love story and fierce struggle that ensues after she enters the fae lands. </p>
+        </div>
+    </div>
+    <div class="container-2">
+        <div class="bookseries">
+            <h2>Order to read</h2>
+            <p> 1. A Court of Thorns and Roses <br>
+                2. A Court of Mist and Fury <br>
+                3. A Court of Wings and Ruin <br>
+                4. A Court of Frost and Starlight <br>
+                5. A Court of Silver Flames <br>
+            </p>
+        </div>
+        
+    </div>
+
+    <script type="module">
+        const url = 'https://youtube-to-mp4.p.rapidapi.com/url=&title?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D6Swd7d6aufQ&title=ACOTAR%20';
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': 'AIzaSyAtahjTr6Dr2IOS1OpKFobaaAS8Y2VmbXI',
+		'X-RapidAPI-Host': 'youtube-to-mp4.p.rapidapi.com'
+	}
+};
+
+try {
+	const response = await fetch(url, options);
+	const result = await response.text();
+	console.log(result);
+} catch (error) {
+	console.error(error);
+}
+    </script>
+
+
 
 </body>
 </html>

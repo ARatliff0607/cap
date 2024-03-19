@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(async function() {
  $('.menu-toggle').on('click', function(){
     $('.nav').toggleClass('showing');
     $('.nav ul').toggleClass('showing');
@@ -42,7 +42,7 @@ $(document).ready(function() {
    // instead of a settings object
  ]
 
-});
+
 
 const url = 'https://youtube-to-mp4.p.rapidapi.com/url=&title?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D6Swd7d6aufQ&title=ACOTAR%20';
 const options = {
@@ -61,6 +61,7 @@ try {
 	console.error(error);
 }
 
+});
 
 
 

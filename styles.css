@@ -171,56 +171,44 @@ a {
     float: left;
 }
 
+.content .main-content .post .post-preview2 {
+    width: 50%;
+    padding: 10px;
+    float: left;
+}
+
 .btn {
     padding: .5rem 1rem;
     background: #460145;
     color: blanchedalmond;
     border-radius: .20rems;
 }
-
-/* footer */
-.footer {
-    background: blueviolet;
-    color: beige;
-    height: 400px;
-}
-
-.footer .footer-content {
-    height: 350px;
+.container {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
 }
 
-.footer .footer-content .footer-section {
-    flex: 1;
-    padding: 25px;
-}
-
-
-
-.footer .footer-content h1, .footer .footer-content h2 {
-    color: beige;
-}
-
-.footer .footer-content .about .contact span {
-    display: block;
-    font-size: 1.5em;
-    margin-bottom: 8px;
-}
-
-.footer .footer-content .contact-form .contact-input {
-    background: #460145;
-    color: beige;
-    margin-bottom: 10px;
-}
-
-/* book1 */
-
-.book1 {
+.information-box {
+    width: 450px;
+    padding: 20px;
+    background-color: #fbaafa; 
     text-align: center;
-    font-size: 25px;
-    font-family: cursive;
 }
 
 .acotar {
     width: 250px;
+}
+
+.book1 {
+    font-size: x-large;
+    text-align: center;
+}
+
+.bookseries {
+    font-size: large;
+    padding: 20px;
+    width: 300px;
+    background-color: #fbaafa;
 }
