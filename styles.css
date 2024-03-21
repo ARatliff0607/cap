@@ -219,13 +219,13 @@ a {
     right: 10px;
 }
 
-input {
+.input {
     padding: 8px;
     border: none;
     border-radius: 4px; 
 }
 
-button {
+.button {
     padding: 8px 16px;
     background-color: #bd28e2;
     color: beige;
@@ -234,3 +234,18 @@ button {
     margin-left: 8px;
     cursor: pointer;
 }
+
+.countdown-container {
+    position: absolute;
+    top: 950px;
+    right: 150px;
+    background-color: #f394cd;
+    border-radius: 10px;
+    width: 15%;
+    padding: 30px;
+    text-align: center;
+    
+  }
+
+  
+

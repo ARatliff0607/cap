@@ -61,6 +61,27 @@ try {
 	console.error(error);
 }
 
+// Set the target date and time for the countdown
+var targetDate = new Date("June 21, 2024 00:00:00").getTime();
+
+// Update the countdown watch every second
+setInterval(function() {
+  // Get the current date and time
+  var now = new Date().getTime();
+
+  // Calculate the time remaining
+  var timeRemaining = targetDate - now;
+
+  // Calculate days, hours, minutes, and seconds
+  var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+  // Display the countdown watch
+  document.getElementById("countdown-watch").innerHTML = days + " days, " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds";
+}, 1000);
+
 });
 
 
