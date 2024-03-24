@@ -174,10 +174,29 @@
 
         </div>
 
-        <div class="top-right-search-container">
-            <input type="text" placeholder="Search..">
-            <button type="submit">Search</button>
-        </div>
+        <div class="search-container">
+            <input type="text" id="search" list="authors">
+            <button id="search-button">Search</button>
+          </div>
+        
+        <datalist id="authors">
+        </datalist>
+        
+        <script>
+          // Get the input and datalist elements
+          const input = document.getElementById('search');
+          const datalist = document.getElementById('authors');
+        
+          // Create an array of authors
+          const authors = ['Sarah J Mass', 'Colleen Hoover', 'Rebecca Yarros', 'Amber Smith'];
+        
+          // Add options to the datalist
+          authors.forEach(author => {
+            const option = document.createElement('option');
+            option.value = author;
+            datalist.appendChild(option);
+          });
+        </script>
 
         <div class="countdown-container">
             <h1>Count down to It Ends with Us movie</h1>

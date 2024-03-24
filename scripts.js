@@ -82,6 +82,35 @@ setInterval(function() {
   document.getElementById("countdown-watch").innerHTML = days + " days, " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds";
 }, 1000);
 
+
+const searchButton = document.getElementById('search-button');
+searchButton.addEventListener('click', function() {
+  // Get the search input value
+  const searchInput = document.getElementById('search-input').value;
+
+  // Perform the search
+  const author = searchAuthorByBook(searchInput);
+
+  // Display the search result
+  const resultContainer = document.getElementById('search-result');
+  resultContainer.textContent = author ? `Author: ${author}` : 'Author not found';
+});
+
+function searchAuthorByBook(bookTitle) {
+  // This is a mock function, you would need to implement your own search logic
+  // Here, you can use the bookTitle to search for the corresponding author in your data source
+
+  // Return the author if found, or null if not found
+  // Example:
+  if (bookTitle === 'A Court of Thorns and Roses') {
+    return 'Sarah J Mass';
+  } else if (bookTitle === 'The Fourth Wing') {
+    return 'Rebecca Yarros';
+  } else {
+    return null;
+  }
+}
+
 });
 
 
