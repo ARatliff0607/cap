@@ -42,17 +42,6 @@ $(document).ready(async function() {
    // instead of a settings object
  ]
 
-
-
-const url = 'https://youtube-to-mp4.p.rapidapi.com/url=&title?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D6Swd7d6aufQ&title=ACOTAR%20';
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': 'AIzaSyAtahjTr6Dr2IOS1OpKFobaaAS8Y2VmbXI',
-		'X-RapidAPI-Host': 'youtube-to-mp4.p.rapidapi.com'
-	}
-};
-
 try {
 	const response = await fetch(url, options);
 	const result = await response.text();
